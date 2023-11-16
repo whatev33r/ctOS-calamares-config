@@ -1,0 +1,105 @@
+- name: "Desktop-Base"
+  description: "Default Desktop Environment (xfce)"
+  hidden: false
+  selected: true
+  critical: true
+- name: "Pentesting-Packages"
+  description: "Pentesting Metapackages"
+  hidden: false
+  selected: false
+  critical: true
+  subgroups:
+      - name: "Network"
+        description: ""
+        selected: false
+        packages:
+           - nmap
+           - zmap
+           - metasploit
+           - crackmapexec
+           - impacket
+           - bettercap
+           - responder
+           - mitm6
+           - wireshark-cli
+           - tcpdump
+           - netdiscover
+           - enum4linux
+           - pcredz
+      - name: "Web"
+        description: ""
+        selected: false
+        packages:
+           - burpsuite
+           - zaproxy
+           - feroxbuster
+           - gobuster
+           - dirsearch
+           - cmsscan
+           - eyewitness
+           - ffuf
+           - wpscan
+           - slowhttptest
+           - dnsenum
+           - subfinder
+           - sqlmap
+           - sslscan
+           - theharvester
+           - nikto
+           - wafw00f
+           - graphw00f
+      - name: "Reversing"
+        description: ""
+        selected: false
+        packages:
+           - ghidra
+           - frida
+           - android-apktool
+           - oledump
+           - python-oletools
+      - name: "Cracking"
+        description: ""
+        selected: false
+        packages:
+           - hashcat
+           - john
+           - hashtag
+           - hydra
+           - kerbrute
+           - brutessh
+           - 
+      - name: "Wireless"
+        description: ""
+        selected: false
+        packages:
+           - aircrack-ng
+           - wifite
+- name: "Printing-Support"
+  description: "Support for printing (Cups)"
+  hidden: false
+  selected: false
+  critical: true
+  packages:
+    - cups
+    - cups-filters
+    - cups-pdf
+    - foomatic-db
+    - foomatic-db-engine
+    - foomatic-db-gutenprint-ppds
+    - foomatic-db-nonfree
+    - foomatic-db-nonfree-ppds
+    - foomatic-db-ppds
+    - ghostscript
+    - gsfonts
+    - gutenprint
+    - splix
+    - system-config-printer
+- name: "Accessibility Tools"
+  description: "Screen reader and mouse tweaks (impaired vision)"
+  hidden: false
+  selected: false
+  critical: true
+  packages:
+    - espeak-ng
+    - mousetweaks
+    - orca
