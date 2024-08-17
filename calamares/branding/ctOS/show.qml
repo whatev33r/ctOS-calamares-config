@@ -16,7 +16,7 @@ Presentation
     id: presentation
  
     Slide {
-        // ctOS loading gif
+        // loading gif
         anchors.fill: parent
         anchors.verticalCenterOffset: 0
  
@@ -30,12 +30,12 @@ Presentation
     }
  
     function onActivate() {
-        console.log("QML Component (ctOS gif) activated");
+        console.log("QML Component (loading gif) activated");
         // presentation.currentSlide = 0;
     }
  
     function onLeave() {
-        console.log("QML Component (ctOS gif) deactivated");
+        console.log("QML Component (loading gif) deactivated");
     }
  
 }
